@@ -27,4 +27,4 @@ with urllib.request.urlopen(URL + p) as res:
     data = gz.read().decode('utf-8')
     data = json.loads(data)
     gz.close()
-    print(data)
+    print(data[1:])
